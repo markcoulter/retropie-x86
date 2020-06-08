@@ -17,3 +17,7 @@ Make the file executable
 Run as root
 
     sudo ./master_setup.sh
+
+Other handy resources:
+https://retropie.org.uk/forum/topic/18145/console-loading-screens/6
+https"//github.com/ehettervik/es_runcommand-splash
