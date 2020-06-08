@@ -59,24 +59,6 @@ function install_retropie() {
     chown -R $USER:$USER $USER_HOME/RetroPie-Setup
 }
 
-function install_bezels() {
-    echo "--------------------------------------------"
-    echo "- Installing Bezels"
-    echo "--------------------------------------------"
-    # Get Retropie Bezels
-    cd $USER_HOME
-    wget https://raw.githubusercontent.com/thebezelproject/BezelProject/master/bezelproject.sh
-    chmod +x "bezelproject.sh"
-
-function install_HurstyThemes() {
-    echo "--------------------------------------------"
-    echo "- Installing HurstyThemes"
-    echo "--------------------------------------------"
-    # Get Hursty's cool themes
-    cd $USER_HOME
-    wget https://raw.githubusercontent.com/RetroHursty69/HurstyThemes/master/install.sh
-    chmod +x "install.sh"
-
 # Configure 'pi' user to autologin
 function enable_autologin_tty() {
     echo "--------------------------------------------"
@@ -224,6 +206,24 @@ function add_retroarch_shaders() {
     rm -rf /opt/retropie/configs/all/retroarch/shaders/.git
 }
 
+function install_bezels() {
+    echo "--------------------------------------------"
+    echo "- Installing Bezels"
+    echo "--------------------------------------------"
+    # Get Retropie Bezels
+    cd $USER_HOME
+    wget https://raw.githubusercontent.com/thebezelproject/BezelProject/master/bezelproject.sh
+    chmod +x "bezelproject.sh"
+
+function install_HurstyThemes() {
+    echo "--------------------------------------------"
+    echo "- Installing HurstyThemes"
+    echo "--------------------------------------------"
+    # Get Hursty's cool themes
+    cd $USER_HOME
+    wget https://raw.githubusercontent.com/RetroHursty69/HurstyThemes/master/install.sh
+    chmod +x "install.sh"
+
 # Force this script to run as root
 [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }
 
@@ -240,3 +240,5 @@ autostart_openbox_apps
 install_latest_video_drivers
 install_vulkan
 add_retroarch_shaders
+install_bezels
+install_hurstythemes
