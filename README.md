@@ -1,19 +1,19 @@
 # retropie-x86
 My retropie scripts
 
-Handy scripts to automate x86 install on Ubuntu boxes
+Handy scripts to automate x86 install on Ubuntu boxes.
+Includes Bezels, Hursty's themes
 
 
 
+Log in as the pi user and download a local copy of this script:
 
-    Log in as the pi user and download a local copy of this script:
+    wget "https://github.com/markcoulter/retropie-x86/blob/master/master_setup.sh"
 
-    wget "https://raw.githubusercontent.com/markcoulter/retropie-x86/retropie_setup_ubuntu.sh"
+Make the file executable
 
-    Make the file executable
+    chmod +x ./master_setup.sh
 
-    chmod +x ./retropie_setup_ubuntu.sh
+Run as root
 
-    Run as root
-
-    sudo ./retropie_setup_ubuntu.sh
+    sudo ./master_setup.sh
