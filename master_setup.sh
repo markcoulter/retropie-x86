@@ -223,8 +223,9 @@ function install_HurstyThemes() {
     # Get Hursty's cool themes
     cd $USER_HOME
     wget https://raw.githubusercontent.com/RetroHursty69/HurstyThemes/master/install.sh
-    chmod +x "install.sh"
-    sudo bash install.sh
+    sudo mv "install.sh" "hurstythemes.sh"
+    chmod +x "hurstythemes.sh"
+    sudo bash hurstythemes.sh
 
 # Force this script to run as root
 [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }
