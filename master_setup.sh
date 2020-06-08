@@ -10,7 +10,7 @@ RETROPIE_CORE_DEPENDS=(
     at-spi2-core libglib2.0-bin dbus-x11 git dialog unzip xmlstarlet
 )
 RETROPIE_EXTRA_DEPENDS=( 
-    openssh-server xdg-utils unclutter 
+    openssh-server xdg-utils unclutter libsdl1.2-dev libgtk2.0-dev build-essential
 )
 
 # Add user to sudoers file and disable password prompt
@@ -241,4 +241,4 @@ install_latest_video_drivers
 install_vulkan
 add_retroarch_shaders
 install_bezels
-install_hurstythemes
+install_HurstyThemes
