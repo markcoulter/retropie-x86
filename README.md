@@ -21,4 +21,7 @@ Run as root
 Other handy resources:
 
 https://retropie.org.uk/forum/topic/18145/console-loading-screens/6
+
 https://github.com/ehettervik/es_runcommand-splash
+
+https://github.com/RetroPie/RetroPie-Setup/wiki/Splashscreen
