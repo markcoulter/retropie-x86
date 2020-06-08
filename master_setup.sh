@@ -64,14 +64,18 @@ function install_bezels() {
     echo "- Installing Bezels"
     echo "--------------------------------------------"
     # Get Retropie Bezels
-    # NOTE: Installing the 'core' packages individually creates issues, use basic_install instead
     cd $USER_HOME
-    git clone --depth=1 https://github.com/valerino/RetroPie-Setup.git
+    wget https://raw.githubusercontent.com/thebezelproject/BezelProject/master/bezelproject.sh
+    chmod +x "bezelproject.sh"
 
-
-
-
-
+function install_HurstyThemes() {
+    echo "--------------------------------------------"
+    echo "- Installing HurstyThemes"
+    echo "--------------------------------------------"
+    # Get Hursty's cool themes
+    cd $USER_HOME
+    wget https://raw.githubusercontent.com/RetroHursty69/HurstyThemes/master/install.sh
+    chmod +x "install.sh"
 
 # Configure 'pi' user to autologin
 function enable_autologin_tty() {
