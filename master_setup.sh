@@ -215,6 +215,7 @@ function install_bezels() {
     wget https://raw.githubusercontent.com/thebezelproject/BezelProject/master/bezelproject.sh
     chmod +x "bezelproject.sh"
     # sudo bash bezelproject.sh
+}
 
 function install_HurstyThemes() {
     echo "--------------------------------------------"
@@ -225,7 +226,8 @@ function install_HurstyThemes() {
     wget https://raw.githubusercontent.com/RetroHursty69/HurstyThemes/master/install.sh
     sudo mv "install.sh" "hurstythemes.sh"
     chmod +x "hurstythemes.sh"
-    sudo bash hurstythemes.sh
+    # sudo bash hurstythemes.sh
+}
 
 # Force this script to run as root
 [ `whoami` = root ] || { sudo "$0" "$@"; exit $?; }
